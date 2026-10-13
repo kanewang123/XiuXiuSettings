@@ -31,7 +31,7 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata(): Promise<Metadata> {
   const storageType = process.env.NEXT_PUBLIC_STORAGE_TYPE || 'localstorage';
   const config = await getConfig();
-  let siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'MoonTVPlus';
+  let siteName = process.env.NEXT_PUBLIC_SITE_NAME || '休休TV';
   if (storageType !== 'localstorage') {
     siteName = config.SiteConfig.SiteName;
   }
